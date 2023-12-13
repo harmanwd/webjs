@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center; background-color: black; color: white;">
+    <h1>HI HELLO BYY BUT WHY</h1>
+    <h3 id="printtime"></h3>
+    <button style="padding: 10px; width: 8%; border-radius: 30px; border: 1px solid white; font-size: 20px; margin-right: 5px; " id="start">start</button>
+    <button style="padding: 10px; width: 8%; border-radius: 30px; border: 1px solid white; font-size: 20px; " id="stop">stop</button>
+</body>
+
+<script>
+let start = document.getElementById("start")
+     let stop = document.getElementById("stop")
+    let time
+
+
+  stop.addEventListener("click",function(){
+    console.log("stopped");
+    clearTimeout(time)
+
+  })
+
+let body = document.querySelector("body")
+
+let createp = document.createElement('p')
+let abc = function abc  (){
+    time = setInterval(function abc (){
+      let h3line = document.querySelector('#printtime')
+      
+      createp.innerHTML = new Date()
+       body.appendChild(createp)
+
+      h3line.innerHTML = new Date()
+      console.log(h3line.innerHTML = new Date());
+    // console.log(new Date());
+},1000)
+}
+// abc.appendChild(body)
+start.addEventListener("click",abc)
+
+</script>
+</html>

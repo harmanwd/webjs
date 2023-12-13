@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .img-fluid{
+            width: 200px;
+        }
+    </style>
+</head>
+<body style="text-align: center; background-color: black; color: white;">
+
+        <h1>Product List</h1>
+        <div class="container">
+            <div class="row" id="abc">
+
+            </div>
+
+        </div>
+        <div id="fetch"></div>
+
+        <ul id="productlistul">
+
+            <li id="empty"></li> 
+        </ul>
+
+
+<script>
+    const productList = [
+        { id: 1, name: 'PEN', price: 2000, image: 'https://5.imimg.com/data5/SELLER/Default/2020/10/PX/KF/AW/20193325/ink-pen.jpg' },
+        { id: 1, name: 'ERASER', price: 50, image: 'data:image/jpeg;base64,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kbFyw/NRB/pb/wApIwlA33UjQwgovV13JQ6cYVXw7MxPAAY/HEien9m2xQVyjpRZ20adQbVpK5Zh+YatgeBiWms1NSXbSCfM87bcTnPU9W1NSf1Hwj6cwNPTOiJRTuwSwLhznBJdQqq2ccgKu4A3GeSTO17mmm2Rn0HiY/575z/w9R/bY4/KNhOihYIvlA0m9dvYTH6m3/YTAsnfd2J93A+kkVQCeoHPStFXgTeBMxAREQEREBERAREQEREBERAREQBEgutWOoEgSdniqmoYgfPqTFWx5g5Hyl/oPqUN6qDKt1Xpp1ZUeck7G5qBFQJuBjUTtj4SUJqcte/prtqyfyr4j+05haO3tucflGw+k6aViqjiQIn+MZq61FQhQjLg8nOPpxO4mq/npHovP1nctBRwJtAhKNTpa8nc+p3M7KVuq8CbogMREQEREBERAREQEREBERAREQEREBERAREQEREDw1MHkQqAeU9xAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERA//9k=' },
+        { id: 1, name: 'PENCIL', price: 100, image: 'https://4.imimg.com/data4/PL/IY/MY-23695144/natraj-pencil.jpg' },
+        { id: 3, name: 'BOOK', price: 500, image: 'https://miro.medium.com/v2/resize:fit:5120/1*42ebJizcUtZBNIZPmmMZ5Q.jpeg'}
+  
+    ];
+    
+    
+      console.log(productList)
+
+        
+        const product = document.getElementById('fetch')
+        const abc = document.getElementById('abc')
+        console.log(product, "check Product");
+        
+            productList.map( (e) => {
+
+                let creatediv = document.createElement('div');
+                creatediv.setAttribute('class','col-md-4 w-25');
+                creatediv.setAttribute('id','col-4');
+                console.log(creatediv, "check");
+
+                //create image tag 
+                let createImg = document.createElement('img')
+                createImg.setAttribute('src', `${e.image}`);
+                createImg.setAttribute('class', 'img-fluid');
+
+
+                //create h1 tag 
+                let createH1 = document.createElement('h1')
+                createH1.innerHTML= `${e.name}`
+                
+                
+                //price list
+                let createh2 = document.createElement('h2')
+                createh2.innerHTML= `${e.price}`
+
+
+                //image tag append in div
+                creatediv.appendChild(createImg);
+                creatediv.appendChild(createH1);
+                creatediv.appendChild(createh2);
+                
+                console.log(creatediv, "check creatediv" );
+                abc.appendChild(creatediv)
+
+
+            
+                //  let createh1 =document.createElement ('h1')
+                //  let createimage = document.createElement('img')
+                //  createimage.setAttribute('src', ${e.image})
+                //  createimage.setAttribute('class', 'img-fluid')
+                //  console.log(createimage, "Hwello Image");
+                //  createh1.innerHTML = ${e.name}
+                //  product.appendChild(createh1)
+                //  product.appendChild(createimage)
+             }
+            
+             )
+
+    //     const fetchUl = document.getElementById('productlistul')
+    //     console.log(fetchUl);
+            
+    //         productList.map( (e) => {
+    //             let createLi = document.createElement('li');
+    //             createLi.innerHTML = ${e.name}
+    //             fetchUl.appendChild(createLi)
+
+
+    // })
+
+
+  
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
