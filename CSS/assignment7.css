@@ -1,0 +1,180 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.bgcolor{
+    background-color: #036C5E;
+}
+.bgrey{
+    color: rgb(165, 161, 161);
+}
+.bgc{
+    background-color: #f8f4e8;;
+}
+.bgw{
+    background-color: white;
+    padding: 20px;
+}
+.tc{
+    text-align: center;
+}
+.w100{
+    width: 100%;
+}
+.w80{
+    width: 80%;
+}
+.w50{
+    width: 50%;
+}
+.w33{
+    width: 31%;
+}
+.w40{
+    width: 40%;
+}
+.w20{
+    width: 20%;
+}
+.w25{
+    width: 25%;
+}
+.tcolor{
+    color: white;
+}
+.torange{
+    color: #ef8451;
+}
+.tgreen{
+    color: #137176;
+}
+.ma{
+    margin: auto;
+}
+.disin ul li{
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+.disul ul li{
+    display: inline;
+    margin-right: 30px;
+}
+.mt{
+    margin-top: 38px;
+    font-size: 20px;
+}
+.mt2{
+    margin-top: 80px;
+}
+.h1mt{
+    margin: 10px 0px;
+}
+.semr{
+    margin-right: 30px;
+}
+.mb{
+    margin-bottom: 10px;
+}
+.pt{
+    padding-top: 40px;
+}
+.pt100{
+    padding-top: 100px;
+}
+.btn{
+    text-align: center;
+    width: 110px;
+    background-color: #ef8451;
+    margin-left: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: 1px solid #ef8451;
+}
+.btn2{
+    border: 1px solid #ef8451;
+    background-color: #ef8451;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.btn3{
+    border: 1px solid #036C5E;
+    background-color: #036C5E;
+    padding: 15px;
+    border-radius: 30px;
+    width: 200px;
+    margin-top: 30px;
+}
+.btn4{
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    margin-top: 30px;
+    float: right;
+    padding: 15px;
+    background-color: white;
+}
+.btn5{
+    border: 1px solid gainsboro;
+    color: grey;
+    width: 220px;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: white;
+}
+.p{
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+.img{
+    margin-top: 20px;
+}
+.img2{
+    width: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+.img3{
+    margin-top: 180px;
+    width: 90%;
+}
+.img4{
+    width: 90%;
+    display: block;
+    margin-left: 30px;
+}
+.h4{
+    font-size: 33px;
+    margin-top: 10px;
+}
+.stp{
+    margin-top: 180px;
+    font-size: 20px;
+}
+.fs{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.border33{
+    border: 1px solid gainsboro;
+    padding: 30px 1px;
+}
+.bgimg{
+    background-image: url(../assignment7/image\ 2.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear{
+    clear: both;
+}

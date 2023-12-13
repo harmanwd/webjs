@@ -1,0 +1,43 @@
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+.bg{
+    background-color: black;
+}
+.box{
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    position: relative;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 250px;
+}
+.l{
+    position:absolute;
+    left: 50px;
+    top: 60px;
+}
+.img{
+    position:absolute;
+    bottom: 30px;
+    right: 70px;
+    width: 70%;
+}
+.text{
+    position: absolute;
+    background-color: yellow;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    top: 90px;
+    right: 11px;
+    padding: 20px;
+}

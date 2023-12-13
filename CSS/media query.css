@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+.section1{
+    width: 100%;
+    margin: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.container1{
+    width: 50%;
+    float: left;
+    background-color:red ;
+    padding: 30px 0px;
+}
+
+.container2{
+    width: 50%;
+    float: left;
+    background-color:blueviolet;
+    padding: 30px 0px;
+}
+/* .container2{
+    background-color:rgb(192, 94, 110) ;
+    padding: 30px 0px;
+} */
+.container3{
+    background-color: blue;
+    padding: 30px 0px;
+}
+.container4{
+    background-color:rgb(243, 243, 161) ;
+    padding: 30px 0px;
+}
+.container5{
+    background-color:rgb(112, 228, 108) ;
+    padding: 30px 0px;
+}
+.container6{
+    background-color: rgb(199, 106, 44);
+    padding: 30px 0px;
+}
+.fl{
+    float: left;
+}
+@media screen and (min-width: 480px) {
+    .sddsd{
+        width: 50%;
+        background-color: black;
+    }
+  }
+/* @media screen and (min-width:0px) and (max-width:577px)
+{
+    .container1{
+        width: 100%;
+        background-color: black;
+    }
+
+    .container2{
+        width: 100%;
+    }
+} */

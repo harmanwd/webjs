@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.bgc{
+    background-color:skyblue;
+}
+.div {
+    animation-name:div;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    margin-left: 100px;
+    animation-timing-function: linear;
+}
+.div2 {
+    animation-name:div;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    margin-left: 300px;
+    animation-timing-function: linear;
+}
+
+@keyframes div{
+ 0%{
+        height:100px;
+        width: 100px;
+        border-radius:100px;
+        border: 1px solid black;
+        background: red;
+    }
+96%{
+        height:100px;
+        width:100px;
+        border-radius:100px 100px 100px 100px;
+        background: red;
+        border: 1px solid black;
+    }
+100%{
+        height:100px;
+        width: 100px;
+        border-radius:100px 100px 60px 60px;
+        background: red;
+        border: 1px solid black;
+        transform: translate(0,400px);
+    }
+}

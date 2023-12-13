@@ -1,0 +1,84 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.bgc{
+    background-color: #37517e;
+}
+.fbtn{
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    background-color:#37517e ;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+}
+.fbtn2{
+    padding: 12px 30px;
+    margin-left: 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    background-color:rgba(40, 58, 90, 0.9) ;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+}
+.fbtn2:hover{
+    background-color: #47b2e4;
+    color: #ffff;
+    transition: all 0.5s;
+}
+.fbtn:hover{
+    background-color: #47b2e4;
+    color: #ffff;
+    transition: all 0.5s;
+}
+.tbtn{
+    background-color:white;
+    border: 2px solid royalblue;
+    border-radius: 5px;
+    width: 30%;
+    color: white;
+    font-weight: 500;
+    padding: 6px;
+    color: royalblue;
+    transition: all 0.5s;
+}
+.tbtn:hover{
+    background-color:royalblue;
+    color: white;
+    transition: all 0.5s;
+}
+.section{
+    width: 100%;
+    padding: 5px;
+    opacity: 50%;
+
+}
+.section:hover{
+    padding: 0px;
+    opacity: 100%;
+    transition: all 1s;
+}
+.lilly{
+    width: 100%;
+    padding: 1px;
+    opacity: 50%;
+}
+.lilly:hover{
+    padding: 0px;
+    opacity: 100%;
+    transition: all 1s;
+}
+.lii{
+	margin: 5px;
+	padding: 2px;  
+	color: #fff; 
+}
+.lii:hover{
+	background-color: #fff;
+    color: #111;
+    transition: all 0.5s;
+}

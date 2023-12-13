@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.w100{
+    width: 100%;
+}
+.w80{
+    width: 80%;
+    margin: auto;
+}
+.w33{
+    width: 33%;
+    padding: 50px 0px;
+    text-align: center;
+}
+div:nth-last-of-type(1n) {
+    background-color: blue;
+}
+
+div:nth-of-type(2n) {
+    background-color: green;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+.fl{
+    float: left;
+}

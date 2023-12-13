@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bgc{
+    background-color: blue;
+    color: white;
+    padding: 15px 0px;
+}
+.w100{
+    width: 100%;
+}
+.w30{
+    width: 30%;
+    text-align: center;
+}
+.w70{
+    width: 70%;
+}
+.fl{
+    float: left;
+}
+.nav ul li{
+    display: inline;
+}
+.fs{
+    font-size: 30px;
+}
+.ml{
+    margin-left: 90px;
+}
+.clear{
+    clear: both;
+}
+.nav ul li:hover{
+    border: 2px solid white;
+}
+.bgc h1:hover{
+    border: 2px solid white;
+}

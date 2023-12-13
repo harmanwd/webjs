@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    width: 100px;
+}
+.menu:hover{
+    width: 800px;
+}

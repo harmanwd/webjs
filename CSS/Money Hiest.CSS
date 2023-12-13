@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.center{
+    text-align: center;
+}
+.color{
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.margin{
+    margin-left: 20px;
+    margin-top: 10px;
+ }
+ .fl{
+    float: left;
+ }
+ .clear{
+    clear: both;
+ }
+ .pt{
+    margin-top: 10px;
+ }

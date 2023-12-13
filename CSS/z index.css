@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.border{
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    margin-top: 250px;
+    padding: 20px;
+}
+.pos{
+    position: relative;
+}
+.pos2{
+    position: absolute;
+    bottom: 30px;
+    left: 630px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    z-index: 1;
+}
+.pos3{
+    position: absolute;
+    bottom: 0px;
+    left: 580px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+}
+.img{
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    opacity: 0.5;
+}
+.img2{
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    right: 285px;
+}
