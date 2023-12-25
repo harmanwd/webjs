@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="CSS/tic tac toe.css">
+</head>
+<body>
+    <main class="background">
+        <section class="tic">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section>
+            player <span class="display-player playerx">X</span>'s turn
+        </section>
+        <section class="container">
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+            <div class="title"></div>
+        </section>
+        <section class="player announcer"></section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>    
+</body>
+
+
+<script>
+    window.addEventListener('DOMCcontentLoaded', () =>{
+        const tiles = Array.from(document.querySelectorAll('.tile'));
+        const playerDisplay = document.querySelector('.display-player');
+        const resetButton = document.querySelector('#reset');
+        const announcer = document.querySelector('.announcer');
+
+
+        let board = ['','','','','','','','','']
+        let currenplayer = 'X';
+        let isGameActive = true;
+
+
+        resetButton.addEventListener('click', resetboard);
+    });
+</script>
+
+</html>
