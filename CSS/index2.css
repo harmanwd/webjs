@@ -82,3 +82,15 @@
     color: #111;
     transition: all 0.5s;
 }
+.lii1{
+	margin: 5px;
+	padding: 2px;  
+	color:#444444; 
+}
+.lii1:hover{
+	background-color: #47b2e4;
+    border-radius: 20px;
+    width: 60px;
+    text-align: center;
+    color: #111;
+}
